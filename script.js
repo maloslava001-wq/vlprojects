@@ -15,11 +15,52 @@ function formatTime(sec) {
   return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`;
 }
 
+function renderChangelog() {
+  const entries = VL_DATA.changelog || [];
+  contentArea.innerHTML = '';
+
+  if (entries.length === 0) {
+    footerText.textContent = 'Пока больше ничего нет :(';
+    return;
+  }
+
+  footerText.textContent = 'Пока больше ничего нет :(';
+
+  entries.forEach(entry => {
+    const card = document.createElement('article');
+    card.className = 'project-row changelog-row';
+
+    const listItems = Array.isArray(entry.items)
+      ? entry.items.map(text => `<li>${text}</li>`).join('')
+      : '';
+
+    card.innerHTML = `
+      <div class="cover-box changelog-badge">
+        <div class="cover-placeholder">${entry.version || 'UPDATE'}</div>
+      </div>
+      <div class="project-info">
+        <div>
+          <h2 class="project-title">${entry.title || entry.version}</h2>
+          <p class="project-desc">${entry.date ? `Дата: ${entry.date}` : ''}</p>
+          <ul class="changelog-list">${listItems}</ul>
+        </div>
+      </div>
+    `;
+
+    contentArea.appendChild(card);
+  });
+}
+
 function renderTab(tabName) {
   // Останавливаем музыку при переключении вкладки
   if (activeAudio) {
     activeAudio.pause();
     activeAudio = null;
+  }
+
+  if (tabName === 'changelog') {
+    renderChangelog();
+    return;
   }
 
   const items = VL_DATA[tabName] || [];
