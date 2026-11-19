@@ -41,9 +41,9 @@ const VL_DATA = {
       title: "Ronix",
       desc: "Автор: VL.",
       image: "images/ronix.jpg",
-      audio: "music/ronix.mp3",
+      audio: "music/Ronix.mp3",
       size: "2.74Mb",
-      link: "music/ronix.mp3"
+      link: "music/Ronix.mp3"
     }
   ],
   android: [],
