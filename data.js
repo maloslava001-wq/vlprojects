@@ -66,5 +66,15 @@ const VL_DATA = {
       link: "#",
       inProgress: false
     }
-  ]
-};;
+  ],
+changelog: [
+  {
+    version: "v0.0.1",
+    date: "19.11.2026",
+    title: "Первый запуск VLprojects",
+    items: [
+      "Сайт развёрнут на GitHub Pages.",
+      "Исправление багов.",
+    ]
+  }
+],
