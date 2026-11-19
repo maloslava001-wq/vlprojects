@@ -186,6 +186,18 @@ body.broken-mode .vl-logo img {
   margin-bottom: 24px;
 }
 
+/* Список изменений во вкладке CHANGELOG */
+.changelog-list {
+  list-style: square;
+  padding-left: 24px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.changelog-list li {
+  margin-bottom: 6px;
+}
+
 /* Кастомный ретро мини-плеер VL */
 .vl-player {
   display: flex;
@@ -284,6 +296,49 @@ body.broken-mode .vl-logo img {
   opacity: 0.75;
 }
 
+/* Кнопка перехода в Telegram в самом низу справа */
+.tg-bottom-wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px 16px 20px;
+}
+
+.tg-bottom-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--bg);
+  color: var(--fg);
+  border: var(--border-w) solid var(--fg);
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+.tg-bottom-btn:hover {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.tg-badge {
+  display: inline-block;
+  padding: 2px 6px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.tg-bottom-btn:hover .tg-badge {
+  background: #ffffff;
+  color: var(--accent);
+}
+
 @media (max-width: 650px) {
   .project-row {
     flex-direction: column;
@@ -295,5 +350,8 @@ body.broken-mode .vl-logo img {
   }
   .download-wrap {
     align-self: flex-start;
+  }
+  .tg-bottom-wrap {
+    padding: 10px 14px 18px;
   }
 }
