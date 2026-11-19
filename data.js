@@ -38,12 +38,12 @@ const VL_DATA = {
       link: "music/Deach.mp3"
     },
     {
-      title: "Ronix",
+      title: "Seretive",
       desc: "Автор: VL.",
-      image: "images/ronix.jpg",
-      audio: "music/Ronix.mp3",
-      size: "2.74Mb",
-      link: "music/Ronix.mp3"
+      image: "",
+      audio: "music/Seretive.mp3",
+      size: "1.94Mb",
+      link: "music/Seretive.mp3"
     }
   ],
   android: [],
