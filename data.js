@@ -41,9 +41,9 @@ const VL_DATA = {
       title: "Seretive",
       desc: "Автор: VL.",
       image: "",
-      audio: "music/Seсretive.mp3",
+      audio: "music/Secretive.mp3",
       size: "1.94Mb",
-      link: "music/Seretive.mp3"
+      link: "music/Secretive.mp3"
     }
   ],
   android: [],
