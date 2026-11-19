@@ -3,7 +3,7 @@ const VL_DATA = {
     {
       title: "NULL (v1.0)",
       desc: "Арена шутер от первого лица.",
-      image: "images/null.png",
+      image: "images/VLVLVL.jpg",
       size: "480Mb",
       link: "#",
       inProgress: true
