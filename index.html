@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VL — GAMES / MODS / APPS / MUSIC / ANDROID</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <nav class="tabs">
+      <button class="tab-btn active" id="gamesBtn" data-tab="games">
+        <span class="tab-label">GAMES</span>
+        <svg class="cracks-svg" viewBox="0 0 120 44" preserveAspectRatio="none">
+          <path class="crack crack-1" d="M 18,0 L 26,14 L 19,24 L 30,36" />
+          <path class="crack crack-2" d="M 95,44 L 84,28 L 92,18 L 78,6 M 84,28 L 68,31" />
+          <path class="crack crack-3" d="M 52,0 L 57,16 L 46,27 L 61,44 M 57,16 L 73,19 M 26,14 L 44,12" />
+        </svg>
+      </button>
+
+      <button class="tab-btn" data-tab="mods"><span class="tab-label">MODS</span></button>
+      <button class="tab-btn" data-tab="apps"><span class="tab-label">APPS</span></button>
+      <button class="tab-btn" data-tab="music"><span class="tab-label">MUSIC</span></button>
+      <button class="tab-btn" data-tab="android"><span class="tab-label">ANDROID</span></button>
+    </nav>
+
+    <!-- Твой логотип из папки images/logo.png -->
+    <div class="vl-logo" id="vlLogo" title="VL PROJECTS (кликни, чтобы починить кнопку GAMES)">
+      <img src="images/logo.png" alt="VL" onerror="this.outerHTML='<span class=\'logo-fallback\'>VL</span>'">
+    </div>
+  </header>
+
+  <main id="contentArea"></main>
+
+  <footer class="empty-footer">
+    <p id="footerText">Пока больше ничего нет :(</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
