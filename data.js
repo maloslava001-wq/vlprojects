@@ -40,7 +40,7 @@ const VL_DATA = {
     {
       title: "Seretive",
       desc: "Автор: VL.",
-      image: "",
+      image: "images/VLVLVL.jpg",
       audio: "music/Secretive.mp3",
       size: "1.94Mb",
       link: "music/Secretive.mp3"
