@@ -72,11 +72,12 @@ const VL_DATA = {
   ],
 
     arts: [
-      {
-        title: "image/ART1.png",
-        desc: "Первый арт."
-      }
-    ],
+    {
+      title: "Первый арт",
+      image: "image/ART1.png",
+      author: "VL"
+    }
+      ],
 
   android: [
     {
