@@ -73,8 +73,8 @@ const VL_DATA = {
 
     arts: [
       {
-        title: "Первый Арт",
-        image: "image/ART1.png"
+        title: "image/ART1.png",
+        desc: "Первый арт."
       }
     ],
 
