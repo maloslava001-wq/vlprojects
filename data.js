@@ -44,6 +44,14 @@ const VL_DATA = {
       audio: "music/Secretive.mp3",
       size: "1.94Mb",
       link: "music/Secretive.mp3"
+    },
+    {
+      title: "Calm",
+      desc: "Автор: VL.",
+      image: "images/Calm.jpg",
+      audio: "music/Calm.mp3",
+      size: "3.01Mb",
+      link: "music/Calm.mp3"
     }
   ],
   android: [
