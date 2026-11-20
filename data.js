@@ -71,7 +71,12 @@ const VL_DATA = {
     }
   ],
 
-    arts: [],
+    arts: [
+      {
+        title: "Первый Арт",
+        image: "image/ART1.png"
+      }
+    ],
 
   android: [
     {
