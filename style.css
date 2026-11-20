@@ -1,4 +1,5 @@
-:: #ffffff;
+:root {
+  --bg: #ffffff;
   --fg: #000000;
   --accent: #ff0000;
   --border-w: 3px;
