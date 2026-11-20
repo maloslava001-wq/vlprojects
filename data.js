@@ -56,7 +56,7 @@ const VL_DATA = {
     {
       title: "Hell",
       desc: "Автор VL.",
-      image: "image/VLVLVL.jpg",
+      image: "images/Hell.jpg",
       audio: "music/Hell.mp3",
       size: "3.18Mb",
       link: "music/Hell.mp3"
@@ -64,7 +64,7 @@ const VL_DATA = {
     {
       title: "Null",
       desc: "Автор VL.",
-      image: "image/VLVLVL.jpg",
+      image: "images/VLVLVL.jpg",
       audio: "music/Null.mp3",
       size: "1.93Mb",
       link: "music/Null.mp3"
@@ -74,7 +74,7 @@ const VL_DATA = {
     arts: [
     {
       title: "Первый арт",
-      image: "image/ART1.png",
+      image: "images/ART1.png",
       author: "VL"
     }
       ],
