@@ -70,6 +70,9 @@ const VL_DATA = {
       link: "music/Null.mp3"
     }
   ],
+
+    arts: [],
+
   android: [
     {
       title: "MCVL1.4",
