@@ -56,7 +56,7 @@ const VL_DATA = {
     {
       title: "Hell",
       desc: "Автор VL.",
-      image: "image/Hell.jpg",
+      image: "image/VLVLVL.jpg",
       audio: "music/Hell.mp3",
       size: "3.18Mb",
       link: "music/Hell.mp3"
