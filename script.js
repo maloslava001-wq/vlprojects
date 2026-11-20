@@ -51,6 +51,40 @@ function renderChangelog() {
   });
 }
 
+function renderArts() {
+  const arts = VL_DATA.arts || [];
+  contentArea.innerHTML = '';
+
+  if (arts.length === 0) {
+    footerText.textContent = 'Пока больше ничего нет :(';
+    return;
+  }
+
+  footerText.textContent = 'Пока больше ничего нет :(';
+
+  const grid = document.createElement('section');
+  grid.className = 'arts-grid';
+
+  arts.forEach(art => {
+    const card = document.createElement('article');
+    card.className = 'art-card';
+
+    const labelText = art.title || 'АРТ';
+    const artHtml = art.image
+      ? `<img src="${art.image}" alt="${labelText}" onerror="this.outerHTML='<div class=\\'cover-placeholder\\'>${labelText}</div>'">`
+      : `<div class="cover-placeholder">${labelText}</div>`;
+
+    card.innerHTML = `
+      <div class="art-frame">${artHtml}</div>
+      <p class="art-author">${art.author || 'АВТОР'}</p>
+    `;
+
+    grid.appendChild(card);
+  });
+
+  contentArea.appendChild(grid);
+}
+
 function renderTab(tabName) {
   // Останавливаем музыку при переключении вкладки
   if (activeAudio) {
@@ -60,6 +94,11 @@ function renderTab(tabName) {
 
   if (tabName === 'changelog') {
     renderChangelog();
+    return;
+  }
+
+  if (tabName === 'arts') {
+    renderArts();
     return;
   }
 
