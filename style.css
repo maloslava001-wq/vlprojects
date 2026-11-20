@@ -1,5 +1,4 @@
-:root {
-  --bg: #ffffff;
+:: #ffffff;
   --fg: #000000;
   --accent: #ff0000;
   --border-w: 3px;
@@ -354,4 +353,4 @@ body.broken-mode .vl-logo img {
   .tg-bottom-wrap {
     padding: 10px 14px 18px;
   }
-}
+    }
