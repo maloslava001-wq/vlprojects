@@ -60,6 +60,14 @@ const VL_DATA = {
       audio: "music/Hell.mp3",
       size: "3.18Mb",
       link: "music/Hell.mp3"
+    },
+    {
+      title: "Null",
+      desc: "Автор VL.",
+      image: "image/VLVLVL.jpg",
+      audio: "music/Null.mp3",
+      size: "1.93Mb",
+      link: "music/Null.mp3"
     }
   ],
   android: [
